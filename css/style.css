@@ -12,6 +12,10 @@
   --color-red: #cb0000;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-image: url(/img/background.jpg);
   width: 100%;
@@ -127,18 +131,23 @@ h2 {
   font-family: "Holtwood One SC", serif;
 }
 
-.card {
-  border: 3px solid var(--color-primary);
-
-  background-color: white;
+.curiosidades__cards {
   width: 90%;
 
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-radius: 10px;
 
   margin: 10px;
+
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 19px;
 }
 
 .card__img img {
@@ -176,7 +185,7 @@ h2 {
 }
 
 .video__frame iframe {
-  width: 400px;
+  width: 80vw;
   height: 660px;
 }
 
@@ -218,5 +227,37 @@ footer {
   .menu ul {
     display: flex;
     flex-direction: row;
+  }
+
+  .banner {
+    border: 3px solid ridge;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: justify;
+  }
+
+  .curiosidades__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .card {
+    width: 374px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0px 7px 6px -1px var(--color-primary);
+  }
+
+  .card__img img {
+    width: 100%;
+    height: 210px;
+    position: relative;
   }
 }
